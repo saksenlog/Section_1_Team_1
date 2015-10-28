@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Donor
-    Created on : 25 Oct, 2015, 3:55:29 PM
+    Document   : Custodian
+    Created on : 27 Oct, 2015, 10:31:54 PM
     Author     : User
 --%>
 
@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Donor Login</title>
+       <title>Custodian Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
@@ -28,9 +28,9 @@
        <div>
         <ul class="nav navbar-nav">
           <li><a href="home.jsp">Home</a></li>
-          <li class ="active"><a href="Donor.jsp">Donor</a></li>
+          <li ><a href="Donor.jsp">Donor</a></li>
           <li><a href="#">Hospital</a></li>
-          <li><a href="#">Custodian</a></li>
+          <li class = "active"><a href="Custodian.jsp">Custodian</a></li>
           <li><a href="#">Contact</a></li>        
           <li><a href="#">FAQ</a></li>
           <li><a href="Register.jsp">NewUser Registraion</a></li>
@@ -39,9 +39,9 @@
       </nav>
         
         <div class="container">
-  <h2>Donor Login Form</h2>
+  <h2>Custodian Login Form</h2>
   <p>Please enter the user name and password to validate the credentials</p>
-  <form class="form-inline" action="DonorLoginServlet" role="form" method="post">
+  <form class="form-inline" action="CustodianLoginServlet" role="form" method="post">
     <div class="form-group">
       <label for="UserName">User Name:</label>
       <input type="text" class="form-control" name="UserName" id="UserName" placeholder="Enter UserName">
@@ -79,4 +79,3 @@
         </form>  -->
         
         
-    

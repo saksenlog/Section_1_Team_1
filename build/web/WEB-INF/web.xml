@@ -20,6 +20,10 @@
         <servlet-name>Logout</servlet-name>
         <servlet-class>com.test.webapp.servlet.Logout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CustodianLoginServlet</servlet-name>
+        <servlet-class>com.test.webapp.servlet.CustodianLoginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servlet</servlet-name>
         <url-pattern>/servlet</url-pattern>
@@ -40,9 +44,18 @@
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustodianLoginServlet</servlet-name>
+        <url-pattern>/CustodianLoginServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            home.jsp
+        </welcome-file>
+    </welcome-file-list>
 </web-app>
